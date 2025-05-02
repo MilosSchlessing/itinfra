@@ -2,10 +2,10 @@ AWSTemplateFormatVersion: '2010-09-09'
 Description: 'CloudFormation template to create an EC2 instance'
 
 Resources:
-MyEC2Instance:
-Type: 'AWS::EC2::Instance'
-Properties:
-ImageId: ami-0ce8c2b29fcc8a346
-InstanceType: t2.micro
-SecurityGroupIds:
-- sg-030401d854e284ecf
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+    ImageId: ami-0ce8c2b29fcc8a346
+    InstanceType: t2.micro
+    SecurityGroupIds:
+      - sg-030401d854e284ecf
